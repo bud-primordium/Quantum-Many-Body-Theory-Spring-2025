@@ -1,0 +1,29 @@
+SYSTEM = cd Si GW0
+ 
+ENCUT  = 400    
+
+NBANDS = 64     
+
+NELM = 1     
+ALGO = NONE 
+
+LWAVE  = F
+LCHARG = F
+
+# write input files for Wannier90
+LWANNIER90    = T
+NUM_WANN      = 8
+WANNIER90_WIN = "
+exclude_bands = 17-64
+
+Begin Projections
+Si:sp3
+End Projections
+
+# Disentanglement
+dis_win_min = -7
+dis_win_max = 17
+dis_num_iter = 100
+
+guiding_centres = true
+"

@@ -1,0 +1,12 @@
+SYSTEM  = Si DFT unoccupied states
+
+ISMEAR  = 0      ! Gaussian smearing
+SIGMA   = 0.05   ! smearing in eV, small sigma is required to avoid partial occupancies
+ENCUT   = 400    ! energy cutoff
+
+NBANDS  = 64     ! maybe even more bands 
+
+ALGO    = Exact  ! use exact diagonalization of the Hamiltonian
+NELM    = 1      ! since we are already converged stop after one step
+
+  LOPTICS = T      ! write WAVEDER

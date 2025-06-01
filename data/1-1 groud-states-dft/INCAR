@@ -1,0 +1,5 @@
+SYSTEM = cd Si DFT ground state 
+
+ISMEAR = -5     ! tetrahedron method w Blöchl corrections
+EDIFF  = 1E-8   ! convergence criterion
+ENCUT  = 400    ! energy cutoff

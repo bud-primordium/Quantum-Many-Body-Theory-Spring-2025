@@ -1,0 +1,13 @@
+SYSTEM    = Si G0W0
+
+ISMEAR    = 0      ! Gaussian smearing
+SIGMA     = 0.05   ! smearing in eV, small sigma is required to avoid partial occupancies
+ENCUT     = 400    ! energy cutoff
+
+NBANDS    = 64     ! maybe even more bands 
+
+! G0W0
+ALGO      = EVGW0  ! use "GW0" for VASP.5.X
+NELMGW    = 1      ! use "NELM" prior to VASP.6.4
+
+NOMEGA    = 50     ! default

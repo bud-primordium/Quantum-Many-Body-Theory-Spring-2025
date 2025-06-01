@@ -1,0 +1,52 @@
+
+[2025-06-01 15:20:09] [95235] INFO: ================================================================================
+[2025-06-01 15:20:09] [95235] INFO: 开始 Wannier90 作业脚本
+[2025-06-01 15:20:09] [95235] INFO: ================================================================================
+
+[2025-06-01 15:20:09] [95235] INFO: ================================================================================
+[2025-06-01 15:20:09] [95235] INFO: 设置执行环境
+[2025-06-01 15:20:09] [95235] INFO: ================================================================================
+[2025-06-01 15:20:09] [95235] INFO: 设置ulimit堆栈大小为unlimited。
+[2025-06-01 15:20:09] [95235] INFO: 从以下位置加载 Intel OneAPI 环境: /opt/intel/oneapi/setvars.sh
+[2025-06-01 15:20:11] [95235] INFO: Intel OneAPI 环境已加载。
+[2025-06-01 15:20:11] [95235] INFO: 更新后的 LD_LIBRARY_PATH: /home/yqyang/.local/hdf5-1.14.6-intel-parallel/lib:/opt/libs:/opt/intel/oneapi/vpl/2023.0.0/lib:/opt/intel/oneapi/tbb/2021.8.0/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.8.0//libfabric/lib:/opt/intel/oneapi/mpi/2021.8.0//lib/release:/opt/intel/oneapi/mpi/2021.8.0//lib:/opt/intel/oneapi/mkl/2023.0.0/lib/intel64:/opt/intel/oneapi/itac/2021.8.0/slib:/opt/intel/oneapi/ipp/2021.7.0/lib/intel64:/opt/intel/oneapi/ippcp/2021.6.3/lib/intel64:/opt/intel/oneapi/ipp/2021.7.0/lib/intel64:/opt/intel/oneapi/dnnl/2023.0.0/cpu_dpcpp_gpu_dpcpp/lib:/opt/intel/oneapi/debugger/2023.0.0/gdb/intel64/lib:/opt/intel/oneapi/debugger/2023.0.0/libipt/intel64/lib:/opt/intel/oneapi/debugger/2023.0.0/dep/lib:/opt/intel/oneapi/dal/2023.0.0/lib/intel64:/opt/intel/oneapi/compiler/2023.0.0/linux/lib:/opt/intel/oneapi/compiler/2023.0.0/linux/lib/x64:/opt/intel/oneapi/compiler/2023.0.0/linux/lib/oclfpga/host/linux64/lib:/opt/intel/oneapi/compiler/2023.0.0/linux/compiler/lib/intel64_lin:/opt/intel/oneapi/ccl/2021.8.0/lib/cpu_gpu_dpcpp:/usr/local/lib64:/opt/slurm/lib:/opt/intel/oneapi/vpl/2023.0.0/lib:/opt/intel/oneapi/tbb/2021.8.0/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.8.0//libfabric/lib:/opt/intel/oneapi/mpi/2021.8.0//lib/release:/opt/intel/oneapi/mpi/2021.8.0//lib:/opt/intel/oneapi/mkl/2023.0.0/lib/intel64:/opt/intel/oneapi/itac/2021.8.0/slib:/opt/intel/oneapi/ipp/2021.7.0/lib/intel64:/opt/intel/oneapi/ippcp/2021.6.3/lib/intel64:/opt/intel/oneapi/ipp/2021.7.0/lib/intel64:/opt/intel/oneapi/dnnl/2023.0.0/cpu_dpcpp_gpu_dpcpp/lib:/opt/intel/oneapi/debugger/2023.0.0/gdb/intel64/lib:/opt/intel/oneapi/debugger/2023.0.0/libipt/intel64/lib:/opt/intel/oneapi/debugger/2023.0.0/dep/lib:/opt/intel/oneapi/dal/2023.0.0/lib/intel64:/opt/intel/oneapi/compiler/2023.0.0/linux/lib:/opt/intel/oneapi/compiler/2023.0.0/linux/lib/x64:/opt/intel/oneapi/compiler/2023.0.0/linux/lib/oclfpga/host/linux64/lib:/opt/intel/oneapi/compiler/2023.0.0/linux/compiler/lib/intel64_lin:/opt/intel/oneapi/ccl/2021.8.0/lib/cpu_gpu_dpcpp:/usr/local/lib64:/opt/slurm/lib:
+[2025-06-01 15:20:11] [95235] INFO: 此脚本未为 Wannier90 显式启用 OpenMP。
+
+[2025-06-01 15:20:11] [95235] INFO: ================================================================================
+[2025-06-01 15:20:11] [95235] INFO: 验证输入和程序可执行文件
+[2025-06-01 15:20:11] [95235] INFO: ================================================================================
+[2025-06-01 15:20:11] [95235] INFO: 使用的程序可执行文件: /home/yqyang/.local/bin/wannier90.x
+[2025-06-01 15:20:11] [95235] INFO: 切换到提交目录: /home/yqyang/projects/learning_vasp/GW/e02_Si-GW0-band/band-structure
+[2025-06-01 15:20:11] [95235] INFO: 当前工作目录: /home/yqyang/projects/learning_vasp/GW/e02_Si-GW0-band/band-structure
+[2025-06-01 15:20:11] [95235] INFO: 在 /home/yqyang/projects/learning_vasp/GW/e02_Si-GW0-band/band-structure 中检查所需的输入文件:
+[2025-06-01 15:20:11] [95235] INFO:   找到: wannier90.win
+
+[2025-06-01 15:20:11] [95235] INFO: ================================================================================
+[2025-06-01 15:20:11] [95235] INFO: 作业信息
+[2025-06-01 15:20:11] [95235] INFO: ================================================================================
+[2025-06-01 15:20:11] [95235] INFO: 作业名称:                wannier90
+[2025-06-01 15:20:11] [95235] INFO: 作业 ID:                 95235
+[2025-06-01 15:20:11] [95235] INFO: 用户:                    yqyang
+[2025-06-01 15:20:11] [95235] INFO: 提交目录:                /home/yqyang/projects/learning_vasp/GW/e02_Si-GW0-band/band-structure
+[2025-06-01 15:20:11] [95235] INFO: 工作目录:                /home/yqyang/projects/learning_vasp/GW/e02_Si-GW0-band/band-structure
+[2025-06-01 15:20:11] [95235] INFO: 分区:                    phys
+[2025-06-01 15:20:11] [95235] INFO: 节点数量:                1
+[2025-06-01 15:20:11] [95235] INFO: 每节点任务数:            96
+[2025-06-01 15:20:11] [95235] INFO: 每任务 CPU 数:           1
+[2025-06-01 15:20:11] [95235] INFO: 总任务数 (MPI Ranks):    96
+[2025-06-01 15:20:11] [95235] INFO: 节点列表:                phys06
+--------------------------------------------------------------------------------
+
+
+[2025-06-01 15:20:11] [95235] INFO: ================================================================================
+[2025-06-01 15:20:11] [95235] INFO: 执行 Wannier90
+[2025-06-01 15:20:11] [95235] INFO: ================================================================================
+[2025-06-01 15:20:11] [95235] INFO: 完整命令: srun --mpi=pmi2 /home/yqyang/.local/bin/wannier90.x wannier90.win 
+
+[2025-06-01 15:20:18] [95235] INFO: ================================================================================
+[2025-06-01 15:20:18] [95235] INFO: Wannier90 成功完成
+[2025-06-01 15:20:18] [95235] INFO: ================================================================================
+
+[2025-06-01 15:20:18] [95235] INFO: ================================================================================
+[2025-06-01 15:20:18] [95235] INFO: 脚本执行结束
+[2025-06-01 15:20:18] [95235] INFO: ================================================================================

@@ -1,0 +1,12 @@
+SYSTEM = cd Si GW0
+
+ISMEAR = 0      
+SIGMA  = 0.05   
+ENCUT  = 400    
+
+NBANDS   = 64     
+NBANDSGW = 16
+
+# GW0
+ALGO = EVGW0 
+NELMGW = 3

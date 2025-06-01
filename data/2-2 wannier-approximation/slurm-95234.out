@@ -1,0 +1,93 @@
+
+================================================================================
+[2025-06-01 15:18:38] INFO: 脚本执行开始 (作业: vasp_job, ID: 95234)
+================================================================================
+
+================================================================================
+[2025-06-01 15:18:38] INFO: 环境设置
+================================================================================
+[2025-06-01 15:18:38] INFO: 设置ulimit堆栈大小为unlimited...
+[2025-06-01 15:18:38] INFO: 加载Intel OneAPI环境: /opt/intel/oneapi/setvars.sh
+[2025-06-01 15:18:40] INFO: Intel OneAPI环境已加载。
+[2025-06-01 15:18:40] INFO: 最终 LD_LIBRARY_PATH: /home/yqyang/.local/hdf5-1.14.6-intel-parallel/lib:/home/yqyang/.local/lib:/opt/libs:/opt/intel/oneapi/vpl/2023.0.0/lib:/opt/intel/oneapi/tbb/2021.8.0/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.8.0//libfabric/lib:/opt/intel/oneapi/mpi/2021.8.0//lib/release:/opt/intel/oneapi/mpi/2021.8.0//lib:/opt/intel/oneapi/mkl/2023.0.0/lib/intel64:/opt/intel/oneapi/itac/2021.8.0/slib:/opt/intel/oneapi/ipp/2021.7.0/lib/intel64:/opt/intel/oneapi/ippcp/2021.6.3/lib/intel64:/opt/intel/oneapi/ipp/2021.7.0/lib/intel64:/opt/intel/oneapi/dnnl/2023.0.0/cpu_dpcpp_gpu_dpcpp/lib:/opt/intel/oneapi/debugger/2023.0.0/gdb/intel64/lib:/opt/intel/oneapi/debugger/2023.0.0/libipt/intel64/lib:/opt/intel/oneapi/debugger/2023.0.0/dep/lib:/opt/intel/oneapi/dal/2023.0.0/lib/intel64:/opt/intel/oneapi/compiler/2023.0.0/linux/lib:/opt/intel/oneapi/compiler/2023.0.0/linux/lib/x64:/opt/intel/oneapi/compiler/2023.0.0/linux/lib/oclfpga/host/linux64/lib:/opt/intel/oneapi/compiler/2023.0.0/linux/compiler/lib/intel64_lin:/opt/intel/oneapi/ccl/2021.8.0/lib/cpu_gpu_dpcpp:/usr/local/lib64:/opt/slurm/lib:/opt/intel/oneapi/vpl/2023.0.0/lib:/opt/intel/oneapi/tbb/2021.8.0/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.8.0//libfabric/lib:/opt/intel/oneapi/mpi/2021.8.0//lib/release:/opt/intel/oneapi/mpi/2021.8.0//lib:/opt/intel/oneapi/mkl/2023.0.0/lib/intel64:/opt/intel/oneapi/itac/2021.8.0/slib:/opt/intel/oneapi/ipp/2021.7.0/lib/intel64:/opt/intel/oneapi/ippcp/2021.6.3/lib/intel64:/opt/intel/oneapi/ipp/2021.7.0/lib/intel64:/opt/intel/oneapi/dnnl/2023.0.0/cpu_dpcpp_gpu_dpcpp/lib:/opt/intel/oneapi/debugger/2023.0.0/gdb/intel64/lib:/opt/intel/oneapi/debugger/2023.0.0/libipt/intel64/lib:/opt/intel/oneapi/debugger/2023.0.0/dep/lib:/opt/intel/oneapi/dal/2023.0.0/lib/intel64:/opt/intel/oneapi/compiler/2023.0.0/linux/lib:/opt/intel/oneapi/compiler/2023.0.0/linux/lib/x64:/opt/intel/oneapi/compiler/2023.0.0/linux/lib/oclfpga/host/linux64/lib:/opt/intel/oneapi/compiler/2023.0.0/linux/compiler/lib/intel64_lin:/opt/intel/oneapi/ccl/2021.8.0/lib/cpu_gpu_dpcpp:/usr/local/lib64:/opt/slurm/lib:
+[2025-06-01 15:18:40] INFO: 检查VASP可执行文件: /home/yqyang/.local/bin/vasp_std
+[2025-06-01 15:18:40] INFO: 将使用的VASP: /home/yqyang/.local/bin/vasp_std
+
+================================================================================
+[2025-06-01 15:18:40] INFO: 作业信息
+================================================================================
+[2025-06-01 15:18:40] INFO: 提交用户:                 yqyang
+[2025-06-01 15:18:40] INFO: 提交目录:                 /home/yqyang/projects/learning_vasp/GW/e02_Si-GW0-band/band-structure
+[2025-06-01 15:18:40] INFO: 当前工作目录:             /home/yqyang/projects/learning_vasp/GW/e02_Si-GW0-band/band-structure
+[2025-06-01 15:18:40] INFO: 请求分区:                 phys
+[2025-06-01 15:18:41] INFO: 请求运行时长:             4-00:00:00
+[2025-06-01 15:18:41] INFO: 分配节点数量:             1
+[2025-06-01 15:18:41] INFO: 每节点任务数:             96
+[2025-06-01 15:18:41] INFO: 总任务数 (MPI ranks):     96
+[2025-06-01 15:18:41] INFO: 每任务CPU数 (for OpenMP): 1
+[2025-06-01 15:18:41] INFO: 预计OMP线程数:            1
+[2025-06-01 15:18:41] INFO: 运行节点列表:             phys06
+--------------------------------------------------------------------------------
+
+[2025-06-01 15:18:41] INFO: 已切换到工作目录: /home/yqyang/projects/learning_vasp/GW/e02_Si-GW0-band/band-structure
+
+================================================================================
+[2025-06-01 15:18:41] INFO: 开始执行VASP计算
+================================================================================
+[2025-06-01 15:18:41] INFO: 使用的VASP命令: srun --mpi=pmi2 /home/yqyang/.local/bin/vasp_std
+ running   96 mpi-ranks, with    1 threads/rank, on    1 nodes
+ distrk:  each k-point on   96 cores,    1 groups
+ distr:  one band on    1 cores,   96 groups
+ vasp.6.5.0 16Dec24 (build Jun 01 2025 12:18:04) complex                        
+  
+ POSCAR found type information on POSCAR Si
+ POSCAR found :  1 types and       2 ions
+ Reading from existing POTCAR
+ scaLAPACK will be used
+ Reading from existing POTCAR
+ LDA part: xc-table for (Slater+PW92), standard interpolation
+ -----------------------------------------------------------------------------
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     The number of bands has been changed from the values supplied in        |
+|     the INCAR file. This is a result of running the parallel version.       |
+|     The orbitals not found in the WAVECAR file will be initialized with     |
+|     random numbers, which is usually adequate. For correlated               |
+|     calculations, however, you should redo the groundstate calculation.     |
+|     I found NBANDS = 64. Now, NBANDS = 96.                                  |
+|                                                                             |
+ -----------------------------------------------------------------------------
+
+ found WAVECAR, reading the header
+  number of bands has changed, file:    64 present:    96
+  trying to continue reading WAVECAR, but it might fail
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ... GRIDC
+ FFT: planning ... GRID_SOFT
+ FFT: planning ... GRID
+ reading WAVECAR
+ random initialization beyond band           64
+ the WAVECAR file was read successfully
+ initial charge from wavefunction
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+NONE   1    -0.149827930223E+02   -0.14983E+02    0.00000E+00     0   0.000E+00
+ Calling wannier_setup of wannier90 in library mode
+ Wannier90 mode
+ Computing MMN (overlap matrix elements)
+ Computing AMN (projections onto localized orbitals)
+   1 F= -.14982793E+02 E0= -.14982848E+02  d E =0.164149E-03
+
+================================================================================
+[2025-06-01 15:18:57] INFO: VASP计算成功完成
+================================================================================
+
+================================================================================
+[2025-06-01 15:18:57] INFO: 脚本执行结束
+================================================================================
